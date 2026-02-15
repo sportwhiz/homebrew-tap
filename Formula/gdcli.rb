@@ -5,20 +5,20 @@
 class Gdcli < Formula
   desc "GoDaddy-focused domain investor CLI for OpenClaw"
   homepage "https://github.com/sportwhiz/gdcli"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sportwhiz/gdcli/releases/download/v0.1.2/gdcli_Darwin_x86_64.tar.gz"
-      sha256 "4aff977bf1db5fbb54e6dbf558614a5f658c6617006e2d0343ae61c23486e0c2"
+      url "https://github.com/sportwhiz/gdcli/releases/download/v0.1.3/gdcli_Darwin_x86_64.tar.gz"
+      sha256 "c148a9217b4fe05ba7cf91433214cfd2587ad1948735fba8d63da113a7d7924d"
 
       def install
         bin.install "gdcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sportwhiz/gdcli/releases/download/v0.1.2/gdcli_Darwin_arm64.tar.gz"
-      sha256 "cc6a2575e16ce67bd382211d20f14c2c6ffd2744af742761e814da7c84b4fc88"
+      url "https://github.com/sportwhiz/gdcli/releases/download/v0.1.3/gdcli_Darwin_arm64.tar.gz"
+      sha256 "e2851640cec755c58cc4b7745f7c1f67487f67c31def9627ed72ec4a2943dc2a"
 
       def install
         bin.install "gdcli"
@@ -28,15 +28,15 @@ class Gdcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sportwhiz/gdcli/releases/download/v0.1.2/gdcli_Linux_x86_64.tar.gz"
-      sha256 "2565941b18f6ed76cb4a10a0b6ad5d723134cd1fd21ad8d5e44d1c86ec2a937d"
+      url "https://github.com/sportwhiz/gdcli/releases/download/v0.1.3/gdcli_Linux_x86_64.tar.gz"
+      sha256 "af64b53c43ca754fed6af40c45bd1d26ee80e555ba493f29874f0fbe7b029ed1"
       def install
         bin.install "gdcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sportwhiz/gdcli/releases/download/v0.1.2/gdcli_Linux_arm64.tar.gz"
-      sha256 "4b25bbc24e2b9c079a0e491dc6d4bacc6dda1ae03ae57ccb22a75790febe6dbf"
+      url "https://github.com/sportwhiz/gdcli/releases/download/v0.1.3/gdcli_Linux_arm64.tar.gz"
+      sha256 "0dc9ea8229f29c1b25c7523cfe03af1dfb5c0144d9e468a238199a63094ce88c"
       def install
         bin.install "gdcli"
       end
